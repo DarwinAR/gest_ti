@@ -1,7 +1,18 @@
 *{
     margin: 0;
-    padding: 0;
+    padding: 0;   
 }
+
+html{
+background-image: url(https://ucc.edu.co/campus-medellin-envigado/PublishingImages/Paginas/12-factores-de-acreditacion-a-profundidad/fachada.JPG);
+background-size: cover;
+display: flex;
+justify-content: end;
+align-items:end;
+
+}
+
+
 a{
     text-decoration: none;
 }
@@ -13,9 +24,11 @@ a{
     border-radius: 10px;
     display: flex;
     justify-content: center;
+    justify-items: center;
     align-items: center;
     flex-direction: column;
-    margin-right: 50px;
+    margin-right: 80px;
+    margin-top: 80px;
 }
 
 #formulario input{
