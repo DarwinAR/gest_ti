@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#encabezado img{
+    width: 30vw;
+}
+
+#encabezado{
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 22vh;
+}
+
+#contenedor{
+    background-color: #d9d9d9;
+    width: 100vw;
+    height: 78vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    
+}
+
+#horario, #programacion, #tickets, #inventario{
+    width: 14vw;
+    height: 30vh;
+    background-color: white;
+    border-radius: 5%;
+    border-width: 0.1vw;
+    border-style: solid;
+    border-color: black;
+    display: flex;
+    justify-content: center;
+    margin: 1vh;
+    flex-wrap: wrap;
+}
+
+.recuadro img{
+    width: 5vw;
+}
+
+.t_parrafo{
+    text-align: center;
+}
+
+.recuadro{
+    width: 13.6vw;
+    height: 14vh;
+    background-color: #01abc8;
+    border-radius: 5%;
+    margin-top: 0.2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
