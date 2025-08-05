@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { routes } from '../app.routes';
 import { ActivatedRoute, RouterModule, Router} from '@angular/router';
+import { UsuariosService, Usuario } from '../services/usuarios.service';
 
 
 @Component({
@@ -10,8 +11,23 @@ import { ActivatedRoute, RouterModule, Router} from '@angular/router';
   templateUrl: './inicio.html',
   styleUrl: './inicio.css'
 })
-export class Inicio {
-  constructor(public ruta:Router){}
+export class Inicio implements OnInit{
+  usuarios: Usuario[] = [];
+  
+  constructor(public ruta:Router, private usuariosServices: UsuariosService){}
+
+  ngOnInit(): void{
+    this.obtenerUsuarios();
+  }
+
+  obtenerUsuarios(){
+    this.usuariosServices.getUsuarios().subscribe({
+      next:(data) =>{
+        this.usuarios = data;
+        console.log(this.usuarios)
+      }
+    })
+  }
   public name = ""
   public password = ""
   public usuario: any = {
@@ -19,12 +35,16 @@ export class Inicio {
     contrasena: "Hola"
   }
   ingreso(){
-    if (this.name==this.usuario.nombre && this.password==this.usuario.contrasena){
+    for(let i = 0; i<= this.usuarios.length; i++){
+      if (this.name==this.usuarios[i].email && this.password==this.usuarios[i].password){
+      console.log("funciona")
       this.ruta.navigate(['p_inicial'])
+      }
+      else{
+      console.log("los datos no coinciden")
+      }
     }
-    else{
-      
-    } 
+     
       
   }
 }
