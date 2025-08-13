@@ -7,7 +7,7 @@ aside{
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 6vw;
+    width: 6%;
     background-color: black;
     align-items: center;
     margin: 0;
@@ -60,27 +60,27 @@ aside p{
 }
 
 #encabezado{
-    background-color: rgb(255, 255, 255);
-    width: 93%;
+    background-color: white;
+    width: 94%;
     height: 22%;
     float: inline-end;
     margin: 0;
 }
 
 #contenedor{
-    margin: 0;
-    width: 92.8vw;
-    height: 78%;
+    width: 94%;
+    height: 77.5vh;
     display: flex;
     justify-content: center;
     align-items: center;
     align-content: center;
+    background-color: #d9d9d9;
 }
 
 #dia{
-    margin: 0;
-    width: 14vw;
-    height: 30vh;
+    
+    width: 13vw;
+    height: 28vh;
     border-radius: 5%;
     border-width: 0.1vw;
     border-style: solid;
@@ -94,7 +94,7 @@ aside p{
 }
 .recuadro{
     width: 100%;
-    height: 14vh;
+    height: 12vh;
     background-color: #01abc8;
     border-radius: 5%;
     display: flex;
@@ -103,11 +103,24 @@ aside p{
 }
 
 .info{
-    margin-top: 10px;
+    display: flex;
+    width: 70%;
+    height: 22px;
+    background-color: #d9d9d9;
+    margin-top: 5px;
+    border-radius: 11px;
+    justify-content: center;
+    align-items: center;
+    border-width: 0.1vw;
+    border-style: solid;
 }
 
 #semana{
-    background-color: aqua;
-    width: 80vw;
-    height: 30vh;
+    background-color: white;
+    width: 70vw;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
 }
