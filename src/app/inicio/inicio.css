@@ -3,18 +3,6 @@
     padding: 0;   
 }
 
-html{
-background-image: url(https://ucc.edu.co/campus-medellin-envigado/PublishingImages/Paginas/12-factores-de-acreditacion-a-profundidad/fachada.JPG);
-background-size: cover;
-display: flex;
-justify-content: end;
-align-items:end;
-background-repeat: no-repeat;
-
-
-}
-
-
 a{
     text-decoration: none;
 }
@@ -59,10 +47,13 @@ a{
 }
 
 #contenedor{
+    background-image: url(https://ucc.edu.co/campus-medellin-envigado/PublishingImages/Paginas/12-factores-de-acreditacion-a-profundidad/fachada.JPG);
+    background-size: cover;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     justify-content: end;
     align-items: center;
+    background-repeat: no-repeat;
 }   
 
