@@ -1,6 +1,3 @@
-<div id="encabezado">
-        <img src="https://la.mathworks.com/academia/tah-portal/universidad-cooperativa-de-colombia-31322369/_jcr_content/schoolLogo.adapt.full.medium.png/1742544325593.png">  
-</div>
 
 <aside>
     <div id="usuario">
@@ -35,14 +32,21 @@
 
 </aside>
 
+<div id="encabezado">
+    <img src="https://la.mathworks.com/academia/tah-portal/universidad-cooperativa-de-colombia-31322369/_jcr_content/schoolLogo.adapt.full.medium.png/1742544325593.png">  
+</div>
+
 <div id="contenedor">
-    <div id="semana" *ngFor="let i of semana" >
-        <div id="dia">
-            <div class="recuadro">
-                <H2>{{i.dia}}</H2>
+    <div id="semana" *ngFor="let s of semanas" >
+        <div class="r_semana">
+            <h3>{{s.semana}}</h3>
+        </div>
+        <div id="dia" *ngFor="let i of dias">
+            <div class=recuadro>
+                <H2>Julio 14</H2>
             </div>
             <div class="info">
-                <p>Julio 14</p>
+                <p>{{s.semana}}</p>
             </div>
             <div class="info">
                 <p>6:30 - 4:30</p>

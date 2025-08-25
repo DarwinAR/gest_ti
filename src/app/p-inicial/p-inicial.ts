@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Route, Router} from '@angular/router';
 
 @Component({
   selector: 'app-p-inicial',
@@ -7,5 +8,12 @@ import { Component } from '@angular/core';
   styleUrl: './p-inicial.css'
 })
 export class PInicial {
+
+  constructor(public ruta:Router){}
+
+  click_h(){
+    this.ruta.navigate(["horario"])
+}
+
 
 }

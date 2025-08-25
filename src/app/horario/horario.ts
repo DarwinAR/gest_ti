@@ -12,13 +12,19 @@ import { CommonModule } from '@angular/common';
 export class Horario {
   constructor(public ruta: Router){}
   
-  semana = [
+  dias = [
     {dia:'Lunes'},
     {dia:'Martes'},
     {dia:'Miercoles'},
     {dia:'Jueves'},
     {dia:'Viernes'},
     {dia:'Sabado'}
+  ]
+
+  semanas = [
+    {semana:'1'},
+    {semana:'2'},
+    {semana:'3'}
   ]
   volver(){
     this.ruta.navigate(['p_inicial']);

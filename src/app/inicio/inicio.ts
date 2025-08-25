@@ -18,27 +18,22 @@ export class Inicio implements OnInit{
 
   ngOnInit(): void{
     this.obtenerUsuarios();
-    
   }
 
   obtenerUsuarios(){
     this.usuariosServices.getUsuarios().subscribe({
-      next:(data) =>{
-        this.usuarios = data;
+      next:(resp) =>{
+        this.usuarios = resp;
         console.log(this.usuarios)
       }
     })
   }
   public name = ""
   public password = ""
-  public usuario: any = {
-    nombre: "Darwin",
-    contrasena: "Hola"
-  }
+
   ingreso(){
     for(let i = 0; i<= this.usuarios.length; i++){
       if (this.name==this.usuarios[i].email && this.password==this.usuarios[i].password){
-      console.log("funciona")
       this.ruta.navigate(['p_inicial'])
       }
       else{
