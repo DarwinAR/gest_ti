@@ -33,6 +33,13 @@ export class Reservas implements OnInit {
   evento: "Juegos de mesa",
   fecha: "19-04-2025",
   lugar: "Auditorio"
+  },
+  {
+    id: 3,
+  usuario: "Carlos",
+  evento: "Taller Medecina",
+  fecha: "19-04-2025",
+  lugar: "Terraza"
   }
 ]
   dtOptions: Config={};
