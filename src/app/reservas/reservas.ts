@@ -31,7 +31,7 @@ export class Reservas implements OnInit {
     id: 2,
   usuario: "Jose",
   evento: "Juegos de mesa",
-  fecha: "19-04-2025",
+  fecha: "14-04-2024",
   lugar: "Auditorio"
   }
 ]
