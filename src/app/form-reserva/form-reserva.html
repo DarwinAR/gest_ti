@@ -1,1 +1,7 @@
-<p>form-reserva works!</p>
+<input type="text" [(ngModel)]="this.eventoInfo.id">
+<input type="text" [(ngModel)]="this.eventoInfo.usuario">
+<input type="text" [(ngModel)]="this.eventoInfo.evento">
+<input type="text" [(ngModel)]="this.eventoInfo.fecha">
+<input type="text" [(ngModel)]="this.eventoInfo.lugar">
+<input type="text" [(ngModel)]="this.eventoInfo.nombre">
+<button (click)="llenar()">Enviar</button>

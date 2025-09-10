@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { DataTablesModule } from "angular-datatables";
 import { Config } from 'datatables.net';
+import { Eventos } from '../services/eventos';
 
 interface evento {
   id: number,
@@ -20,6 +21,8 @@ interface evento {
 })
 export class Reservas implements OnInit {
 
+  constructor(private dataEventos: Eventos){}
+
   data: evento[] = [{
     id: 1,
   usuario: "Michael",
@@ -33,29 +36,41 @@ export class Reservas implements OnInit {
   evento: "Juegos de mesa",
   fecha: "14-04-2024",
   lugar: "Auditorio"
+  },
+  {
+    id: 3,
+  usuario: "Carlos",
+  evento: "Taller Medecina",
+  fecha: "19-04-2025",
+  lugar: "Terraza"
   }
 ]
+
+objRecibido: any;
   dtOptions: Config={};
 
   ngOnInit(): void {
+    this.dataEventos.evento.subscribe(objeto =>{
+      this.objRecibido = objeto;
+    })
     this.dtOptions = {
       data: this.data,
       columns: [{
         title: 'Id',
-        data: 'id'
+        data: 'this.objRecibido.id'
       },
         {
         title: 'Usuario',
-        data: 'usuario'
+        data: 'this.objRecibido.usuario'
       }, {
         title: 'Evento',
-        data: 'evento'
+        data: 'this.objRecibido.evento'
       }, {
         title: 'Fecha / Hora',
-        data: 'fecha'
+        data: 'this.objRecibido.fecha'
       },{
         title: 'Lugar',
-        data: 'lugar'
+        data: 'this.objRecibido.lugar'
       }]
     };
   }
