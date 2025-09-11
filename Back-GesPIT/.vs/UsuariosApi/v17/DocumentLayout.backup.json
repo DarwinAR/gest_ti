@@ -1,12 +1,86 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\darwi\\Documents\\proyecto T.I\\gest_ti\\Back-GesPIT\\",
-  "Documents": [],
+  "WorkspaceRootPath": "C:\\Users\\migue\\Downloads\\Inicio Freelancer\\gest_ti\\Back-GesPIT\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{927D0D9A-A759-4C27-8727-3E9ADE130883}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\migue\\downloads\\inicio freelancer\\gest_ti\\back-gespit\\usuariosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{927D0D9A-A759-4C27-8727-3E9ADE130883}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{927D0D9A-A759-4C27-8727-3E9ADE130883}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\migue\\downloads\\inicio freelancer\\gest_ti\\back-gespit\\usuariosapi\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{927D0D9A-A759-4C27-8727-3E9ADE130883}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\controllers\\eventocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{927D0D9A-A759-4C27-8727-3E9ADE130883}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\migue\\downloads\\inicio freelancer\\gest_ti\\back-gespit\\usuariosapi\\models\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{927D0D9A-A759-4C27-8727-3E9ADE130883}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\models\\eventos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{927D0D9A-A759-4C27-8727-3E9ADE130883}|UsuariosApi\\UsuariosApi.csproj|c:\\users\\migue\\downloads\\inicio freelancer\\gest_ti\\back-gespit\\usuariosapi\\data\\usuarioscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{927D0D9A-A759-4C27-8727-3E9ADE130883}|UsuariosApi\\UsuariosApi.csproj|solutionrelative:usuariosapi\\data\\usuarioscontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
       "VerticalTabListWidth": 256,
-      "DocumentGroups": []
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\Downloads\\Inicio Freelancer\\gest_ti\\Back-GesPIT\\UsuariosApi\\Program.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Program.cs",
+              "ToolTip": "C:\\Users\\migue\\Downloads\\Inicio Freelancer\\gest_ti\\Back-GesPIT\\UsuariosApi\\Program.cs",
+              "RelativeToolTip": "UsuariosApi\\Program.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwC4AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T02:45:36.49Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventoController.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\Downloads\\Inicio Freelancer\\gest_ti\\Back-GesPIT\\UsuariosApi\\Controllers\\EventoController.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Controllers\\EventoController.cs",
+              "ToolTip": "C:\\Users\\migue\\Downloads\\Inicio Freelancer\\gest_ti\\Back-GesPIT\\UsuariosApi\\Controllers\\EventoController.cs",
+              "RelativeToolTip": "UsuariosApi\\Controllers\\EventoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T18:26:50.073Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "UsuariosContext.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\Downloads\\Inicio Freelancer\\gest_ti\\Back-GesPIT\\UsuariosApi\\Data\\UsuariosContext.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Data\\UsuariosContext.cs",
+              "ToolTip": "C:\\Users\\migue\\Downloads\\Inicio Freelancer\\gest_ti\\Back-GesPIT\\UsuariosApi\\Data\\UsuariosContext.cs",
+              "RelativeToolTip": "UsuariosApi\\Data\\UsuariosContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAA3wA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T13:27:12.36Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Eventos.cs",
+              "DocumentMoniker": "C:\\Users\\migue\\Downloads\\Inicio Freelancer\\gest_ti\\Back-GesPIT\\UsuariosApi\\Models\\Eventos.cs",
+              "RelativeDocumentMoniker": "UsuariosApi\\Models\\Eventos.cs",
+              "ToolTip": "C:\\Users\\migue\\Downloads\\Inicio Freelancer\\gest_ti\\Back-GesPIT\\UsuariosApi\\Models\\Eventos.cs",
+              "RelativeToolTip": "UsuariosApi\\Models\\Eventos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T13:20:15.114Z"
+            }
+          ]
+        }
+      ]
     }
   ]
 }

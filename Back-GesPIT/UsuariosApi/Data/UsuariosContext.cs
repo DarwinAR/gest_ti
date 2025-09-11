@@ -1,4 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
 using UsuariosApi.Models;
 
 namespace UsuariosApi.Data
@@ -8,5 +8,7 @@ namespace UsuariosApi.Data
         public UsuariosContext(DbContextOptions<UsuariosContext>options): base(options) { }
 
         public DbSet<Usuario> Usuarios { get; set; }
+
+      public DbSet<Eventos>Evento { get; set; }
     }
 }

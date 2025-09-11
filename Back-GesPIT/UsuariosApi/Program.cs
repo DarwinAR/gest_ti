@@ -10,8 +10,21 @@ namespace UsuariosApi
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
-            builder.Services.AddDbContext<UsuariosContext>(options =>
+      builder.Services.AddCors(options =>
+      {
+        options.AddPolicy("PermitirTodo",
+            builder => builder
+                .AllowAnyOrigin()   // Permite cualquier origen (no recomendado en prod)
+                .AllowAnyMethod()   // Permite GET, POST, PUT, DELETE, etc.
+                .AllowAnyHeader()); // Permite cualquier header
+      });
+      builder.Services.AddControllers();
+      builder.Services.AddEndpointsApiExplorer();
+      builder.Services.AddSwaggerGen();
+
+
+      // Add services to the container.
+      builder.Services.AddDbContext<UsuariosContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
             builder.Services.AddControllers();
@@ -27,6 +40,9 @@ namespace UsuariosApi
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+
+            app.UseCors("PermitirTodo");
 
             app.UseAuthorization();
 
