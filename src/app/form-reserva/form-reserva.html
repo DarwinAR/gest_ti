@@ -1,7 +1,47 @@
+<app-aside></app-aside>
 
-<input type="text" [(ngModel)]="eventoInfo.usuario" name="usuario">
-<input type="text" [(ngModel)]="eventoInfo.evento" name="evento">
-<input type="date" [(ngModel)]="eventoInfo.fecha" name="fecha">
-<input type="text" [(ngModel)]="eventoInfo.lugar" name="lugar">
+<div class="cont_all">
 
+
+<div class="titulo">
+    <h3>Formulario de reservas</h3>
+</div>
+
+<div class="Form_Evento">
+    <div class="fila">
+        <select name="" id="" placeholder="Espacio">
+            <option value="">Espacio</option>
+            <option value="">Aulas Multiples</option>
+            <option value="">Sala de sistemas 1</option>
+            <option value="">Sala de sistemas 2</option>
+            <option value="">Sala de sistemas 3</option>
+            <option value="">Biblioteca</option>
+            <option value="">Pasillo B1</option>
+        </select>
+        <input type="date" [(ngModel)]="eventoInfo.fecha" name="fecha">
+    </div>
+    <div class="fila">
+        <input type="time" placeholder="Hora Inicio">
+        <input type="time" placeholder="Hora Final">
+    </div>
+    <div class="fila">
+        <input type="text" [(ngModel)]="eventoInfo.usuario" name="usuario">
+        <input type="text" [(ngModel)]="eventoInfo.evento" name="evento">
+    </div>
+    <div class="fila">
+        <input type="text" [(ngModel)]="eventoInfo.usuario" name="usuario">
+        <input type="text" [(ngModel)]="eventoInfo.evento" name="evento">
+    </div>
+    <div class="fila">
+        <input type="text" [(ngModel)]="eventoInfo.lugar" name="lugar">
+    </div>
+    <p>_____________________________________________________</p>
+    <H3 style="text-align: center;">Equpos necesarios</H3>
+    <div class="fila2">
+        <input type="checkbox"><label for="">Tarima</label>
+        <input type="text" placeholder="Cantidad">
+    </div>
+</div>
+<br>
 <button (click)="llenar()">Enviar</button>
+</div>

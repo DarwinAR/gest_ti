@@ -1,0 +1,40 @@
+.cont_all{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Form_Evento{
+   width: 50vw;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+}
+
+.fila{
+    display: flex;
+    justify-content: center;
+    margin: 5px;
+}
+
+.fila input{
+    margin: 5px;
+}
+
+input{
+    border-radius: 5px;
+    border-color: gray;
+    width: 150px;
+    height: 20px;
+}
+
+select{
+    margin: 5px;
+    border-radius: 5px;
+    border-color: gray;
+    width: 150px;
+    height: 20px;
+}

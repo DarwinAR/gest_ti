@@ -2,10 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Eventos } from '../services/eventos';
 import { evento } from '../interface/intereventos';
 import { FormsModule } from '@angular/forms';
+import { Aside } from '../aside/aside';
 
 @Component({
   selector: 'app-form-reserva',
-  imports: [FormsModule],
+  imports: [FormsModule, Aside],
   templateUrl: './form-reserva.html',
   styleUrl: './form-reserva.css'
 })

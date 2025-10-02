@@ -26,8 +26,10 @@ export class Horario {
     {semana:'2'},
     {semana:'3'}
   ]
+
   volver(){
     this.ruta.navigate(['p_inicial']);
 
   }
+  
 }
